@@ -4,6 +4,7 @@ import { tileLayerSelect } from '../config/functions';
 import { fullScreenMap } from './fullscreen';
 import { watermark } from './watermark';
 import { markersManageControl } from './marker-control';
+import { polylinesManagerControl } from './polyline-control';
 
 startMapTemplate(document, 'Plantilla - Mapa con Typescript');
 
@@ -15,4 +16,6 @@ fullScreenMap().addTo(map);
 
 markersManageControl().addTo(map);
 
-watermark().addTo(map)
+polylinesManagerControl().addTo(map)
+
+watermark().addTo(map);
